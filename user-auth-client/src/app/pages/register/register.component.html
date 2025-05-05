@@ -1,0 +1,67 @@
+<div class="form-container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="register-form" autocomplete="off">
+      <h2 class="title">Create Account</h2>
+  
+      <!-- Hidden dummy input to stop Chrome autofill -->
+      <input type="text" name="fakeusernameremembered" style="display: none;" />
+      <input type="password" name="fakepasswordremembered" style="display: none;" />
+  
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" formControlName="name" />
+      </div>
+  
+      <div class="input-group">
+        <label>Surname</label>
+        <input type="text" formControlName="surname" />
+      </div>
+  
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" formControlName="email" />
+      </div>
+  
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" formControlName="password" />
+      </div>
+  
+      <div class="input-group">
+        <label>Phone</label>
+        <input type="text" formControlName="phone" />
+      </div>
+  
+      <div class="input-group">
+        <label>City</label>
+        <input type="text" formControlName="city" />
+      </div>
+  
+      <div class="input-group">
+        <label>Qualification</label>
+        <input type="text" formControlName="qualification" />
+      </div>
+  
+      <div class="input-group">
+        <label>Address</label>
+        <textarea formControlName="address"></textarea>
+      </div>
+  
+      <div class="input-group">
+        <label>Gender</label>
+        <select formControlName="gender">
+          <option value="" disabled>Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="input-group">
+        <label>Skills</label>
+        <input type="text" formControlName="skills" placeholder="e.g., Angular, Node.js" />
+      </div>
+  
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </div>
+  

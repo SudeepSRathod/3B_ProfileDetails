@@ -1,0 +1,104 @@
+/* Full page gradient background */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Blue/black shades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container */
+.form-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  animation: fadeIn 0.7s ease-in;
+}
+
+/* Form title */
+.login-form .title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff7f50; /* Medium orange */
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #2c5364;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 8px rgba(255, 127, 80, 0.5);
+  outline: none;
+}
+
+/* Submit button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff7f50, #ff9966);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #e67647, #ff7744);
+}
+
+/* Register link */
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.register-link a {
+  color: #ff7f50;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

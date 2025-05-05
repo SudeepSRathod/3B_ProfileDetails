@@ -1,0 +1,16 @@
+<div class="profile-container">
+  <div class="profile-card">
+    <h2>Hello, {{ user?.name }} {{ user?.surname }}</h2>
+
+    <p><strong>Email:</strong> {{ user?.email }}</p>
+    <p><strong>Phone:</strong> {{ user?.phone }}</p>
+    <p><strong>City:</strong> {{ user?.city }}</p>
+    <p><strong>Qualification:</strong> {{ user?.qualification }}</p>
+    <p><strong>Address:</strong> {{ user?.address }}</p>
+    <p><strong>Gender:</strong> {{ user?.gender }}</p>
+    <p><strong>Skills:</strong> {{ user?.skills }}</p>
+
+    <!-- Logout button placed after all details -->
+    <button class="btn logout-btn" (click)="logout()">Logout</button>
+  </div>
+</div>

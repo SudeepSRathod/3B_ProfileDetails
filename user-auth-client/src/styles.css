@@ -1,0 +1,17 @@
+/* Global styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  input, button {
+    font-family: inherit;
+  }
+  
